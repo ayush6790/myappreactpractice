@@ -1,11 +1,12 @@
 import React from 'react'
+import './post.css'
 
 export default function Post({author, body}) {
   return (
-    <>
-    <p>{author}</p>
-    <p>{body}</p>
-    </>
+    <div className='box'>
+    <p className='author'>{author}</p>
+    <div className='text'>{body}</div>
+    </div>
   )
 }
 
